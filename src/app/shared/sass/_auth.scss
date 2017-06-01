@@ -1,0 +1,136 @@
+@import './conf/conf';
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+  min-width: $resMin;
+  font: 14px/16px $font-proxima;
+  color: $default-text;
+  background-color:$body-bg;
+  overflow: hidden;
+}
+
+header {
+  height: get-vh(90px);
+  background-color: $gainsboro;
+  color: $rum;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: $font-14;
+  padding-left: get-vw(50px);
+  width: 100%;
+}
+
+header span {
+    font-weight: 900;
+    margin-right: 10px;
+    letter-spacing: 2px;
+}
+
+footer {
+    padding: get-vh(40px) get-vw(48px);
+}
+
+.login-row {
+    height: get-vh(990px);
+    background-color: $white;
+}
+
+.login-left {
+    background-color: $pacific-blue;
+    height: 100%;
+    color: $white;
+}
+.login-form .col-form-label{
+    text-align: right;
+}
+
+.login-message {
+    min-height: get-vh(120px);
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.login-welcome {
+    font-size: $font-64;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-welcome i {
+    font-size: $font-14;
+}
+.login-text {
+    font-size: $font-18;
+    line-height: get-vw(27px);;
+    text-align: center;
+}
+
+.login-error .form-error{
+    color: $venetian-red;
+    font-weight: bold;
+    border-left: 3px solid $venetian-red;
+    margin-left: 15px;
+    padding-left: 12px;
+}
+
+.error-text {
+    font-size:$font-36;
+    font-weight: 100;
+    line-height: get-vh(43px);
+}
+
+.help-text {
+    font-size:$font-14;
+    text-align: left;
+    line-height: get-vh(20px);
+}
+
+.hamster {
+    height: get-vh(118px);
+    width: get-vw(120.2px);
+}
+
+.ani {
+    position: fixed;
+    top: -50px;
+    left: 35%;
+    height: 200px;
+    width: 200px;
+    background-color: $nero;
+    border: 2px dotted $nobel;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.ani .hamster {
+    transform: rotate(130deg);
+    position: fixed;
+    top:105px;
+    left: 45%;
+    z-index: 1;
+}
+
+.error .login-welcome {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.error .login-text {
+    text-align: right;
+}
+
+.login-icon svg {
+    height: get-vh(200px);
+    width: get-vw(200px);
+}
+
+.login-form input {
+    width: get-vw(300px)
+}
+
+.e500 svg {
+    height: get-vh(120px);
+    width: get-vw(120px);
+}

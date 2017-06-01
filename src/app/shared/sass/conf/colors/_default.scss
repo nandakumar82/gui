@@ -1,0 +1,68 @@
+$white: #ffffff;
+$white-tilt: #fefefe;
+$white-smoke: #f4f4f4;
+$snow: #fafafa;
+$charcoal: #4a4a4a;
+$nobel: #9b9b9b;
+$nobel1: #979797;
+$silver: #bbbbbb;
+$gainsboro: #d8d8d8;
+$lightning-yellow: #f6a623;
+$venetian-red: #d0021b;
+//$summer-sky: #3cc9e1;
+$summer-sky: #3591E1;
+$apple: #71bf44;
+$cornflower-blue: #4990e2;
+$nero: #282828;
+$tom-thumb: #54644b;
+$deep-liiac: #8a48ca;
+$flamingo: #e16345;
+$old-gold: #d6bd42;
+$lawn-green: #78ff00;
+$iris-blue: #00bbdb;
+$wattle: #cac748;
+$charmbray: #3F5670;
+$pacific-blue: #1A9FD0;
+$gainsboro: #e2e2e2;
+$lynch: #637684;
+$rum: #706D71;
+$transparent: transparent;
+
+$default: $charcoal; //default color for the layout
+$body-bg: $white-smoke; //default background color
+
+$default-text: $default; // default text color layout (usually is the same as $default)
+$content-text: $default-text; // content text color on card, panels, form, etc
+$help-text: $default-text; // additional text color for hits
+
+$label-text: $default-text; // labels color
+$disabled: rgba(255, 255, 255, 0.4); // color for disabled state
+$disabled-bg: tint($disabled, 15%); // background color for disable state
+$border: $nobel; // border color
+
+$primary: #00abff !default;
+$info: #40daf1 !default;
+$success: #8bd22f !default;
+$warning: #e7ba08 !default;
+$danger: #f95372 !default;
+
+
+$primary-light: tint($primary, 30%);
+$info-light: tint($info, 30%);
+$success-light: tint($success, 30%);
+$warning-light: tint($warning, 30%);
+$danger-light: tint($danger, 30%);
+
+$primary-dark: shade($primary, 15%);
+$info-dark: shade($info, 15%);
+$success-dark: shade($success, 15%);
+$warning-dark: shade($warning, 15%);
+$danger-dark: shade($danger, 15%);
+
+$primary-bg: tint($primary, 20%);
+$info-bg: tint($info, 20%);
+$success-bg: tint($success, 20%);
+$warning-bg: tint($warning, 20%);
+$danger-bg: tint($danger, 20%);
+
+

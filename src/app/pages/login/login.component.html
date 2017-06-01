@@ -1,0 +1,81 @@
+<header class="container-fluid d-flex align-items-center">
+    <div class="header-logo"><span>Accurate</span>Background</div>
+</header>
+<div class="container-fluid login-row">
+    <div class="row " style="height:100%;">
+        <div class="col col-5 hidden-sm-down login-left ">
+            <div class="row align-items-center" style="height: 100%;">
+                <div class="col-7 login-message">
+                    <div class="login-welcome">Welcome!</div> <br/>
+                </div>
+                <div class="col-4 login-icon" *ngIf="(username.untouched || password.untouched)|| (form.valid  && !loginError)">
+                    <svg viewBox="0 0 162 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+                            <desc>Created with Sketch.</desc>
+                            <defs></defs>
+                            <g id="Global-Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Log-In-Screen-(English-Greeting)" transform="translate(-429.000000, -338.000000)" stroke="#FFFFFF">
+                                    <g id="Page-1" transform="translate(430.000000, 339.000000)">
+                                        <path d="M80,11.2530315 C42.0323363,11.2530315 11.2530315,42.0323363 11.2530315,80 C11.2530315,117.967664 42.0323363,148.746968 80,148.746968 C117.967664,148.746968 148.746968,117.967664 148.746968,80 C148.703314,42.0501213 117.949879,11.2983023 80,11.2530315 M80,160 C35.8172999,160 0,124.1827 0,80 C0,35.8172999 35.8172999,0 80,0 C124.1827,0 160,35.8172999 160,80 C159.946645,124.160065 124.160065,159.946645 80,160" id="Fill-1" fill="#1A9FD0"></path>
+                                        <path d="M112.730709,105.524157 C97.5458268,105.510299 85.2371654,93.207937 85.215748,78.0217953 L94.0346457,78.0217953 C94.3029921,88.3714016 102.911496,96.5452598 113.261102,96.2756535 C123.232756,96.0173858 131.256693,87.9947087 131.514961,78.0217953 L140.333858,78.0217953 C140.312441,93.231874 127.965984,105.545575 112.755906,105.524157 L112.730709,105.524157 Z" id="Fill-3" fill="#FFFFFF"></path>
+                                        <path d="M98.9351811,54.6394961 C102.288882,54.6394961 105.007622,57.3582362 105.007622,60.711937 C105.007622,64.0656378 102.288882,66.784378 98.9351811,66.784378 C95.5814803,66.784378 92.8627402,64.0656378 92.8627402,60.711937 C92.8627402,57.3582362 95.5814803,54.6394961 98.9351811,54.6394961" id="Fill-5" fill="#FFFFFF"></path>
+                                        <path d="M126.525606,54.6394961 C129.879307,54.6394961 132.598047,57.3582362 132.598047,60.711937 C132.598047,64.0656378 129.879307,66.784378 126.525606,66.784378 C123.171906,66.784378 120.454425,64.0656378 120.454425,60.711937 C120.454425,57.3582362 123.171906,54.6394961 126.525606,54.6394961" id="Fill-7" fill="#FFFFFF"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                </div>
+                <div class="col-4 login-icon" *ngIf="(!form.valid && !username.untouched && !password.untouched) || (!form.untouched && loginError)">
+                    
+                <svg viewBox="0 0 162 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+                    <desc>Created with Sketch.</desc>
+                    <defs></defs>
+                    <g id="Global-Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Log-In-Screen,-Error-(Korean-Greeting)" transform="translate(-429.000000, -338.000000)" stroke="#FFFFFF">
+                            <g id="Group" transform="translate(430.000000, 339.000000)">
+                                <path d="M80,11.2530315 C42.0323363,11.2530315 11.2530315,42.0323363 11.2530315,80 C11.2530315,117.967664 42.0323363,148.746968 80,148.746968 C117.967664,148.746968 148.746968,117.967664 148.746968,80 C148.703314,42.0501213 117.949879,11.2983023 80,11.2530315 M80,160 C35.8172999,160 0,124.1827 0,80 C0,35.8172999 35.8172999,0 80,0 C124.1827,0 160,35.8172999 160,80 C159.946645,124.160065 124.160065,159.946645 80,160" id="Fill-1" fill="#1A9FD0"></path>
+                                <path d="M66.9351811,54.6394961 C70.2888819,54.6394961 73.007622,57.3582362 73.007622,60.711937 C73.007622,64.0656378 70.2888819,66.784378 66.9351811,66.784378 C63.5814803,66.784378 60.8627402,64.0656378 60.8627402,60.711937 C60.8627402,57.3582362 63.5814803,54.6394961 66.9351811,54.6394961" id="Fill-5" fill="#FFFFFF"></path>
+                                <path d="M94.5256063,54.6394961 C97.8793071,54.6394961 100.598047,57.3582362 100.598047,60.711937 C100.598047,64.0656378 97.8793071,66.784378 94.5256063,66.784378 C91.1719055,66.784378 88.4544252,64.0656378 88.4544252,60.711937 C88.4544252,57.3582362 91.1719055,54.6394961 94.5256063,54.6394961" id="Fill-7" fill="#FFFFFF"></path>
+                                <polyline id="Line" stroke-width="6" stroke-linecap="square" points="67 105.353516 73.6015625 99 97 99"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                </div>
+            </div>
+        </div>
+        <div class="col login-right login-form align-self-center">
+            <div>
+                <form [formGroup]="form" (ngSubmit)="onsubmit(form.value)" class="login-form">
+                    <div class="form-group row login-error" *ngIf="(!form.valid && !username.untouched && !password.untouched) || (!form.untouched && loginError)">
+                        <div class="col-2"></div>
+                        <div class="col col-md-4 form-error">{{ formError }}</div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="username" class="col-2 col-form-label" i18n>Username:</label>
+                        <div class="col col-md-5" id="username-p">
+                            <input class="form-control" type="text" formControlName="username" i18n-placeholder placeholder="Username" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password" class="col-2 col-form-label" i18n>Password:</label>
+                        <div class="col col-md-5" id="password-p">
+                            <input class="form-control" type="password" formControlName="password" i18n-placeholder placeholder="Password" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-2"></div>
+                        <div class="col-4"><button type="submit" class="btn btn-primary">Login</button></div>
+                    </div>
+                    <br/>
+                    <div class="form-group row">
+                        <div class="col-2"></div>
+                        <div class="col-10 help-text"><b>Forgot your password?</b>  Don’t fret, <a href="#">Help Desk</a> to the rescue! <br/><br/>
+Or call  1-(800) 216-8047</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

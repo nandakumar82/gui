@@ -1,0 +1,61 @@
+$font-proxima: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+    "Fira Sans", "Droid Sans", "Helvetica Neue", 
+    sans-serif;
+$font-avenir: 'Avenir Next', sans-serif;
+
+$resXXL: 1280px;
+$resXL: 1170px;
+$resL: 991px;
+$resM: 768px;
+$resS: 660px;
+$resXS: 500px;
+$resXXS: 435px;
+$resMin: 320px;
+
+$default-animation-duration: 0.2s;
+$default-animation-style: ease-out;
+
+$assets-root: 'assets/';
+$images-root: $assets-root + 'img/';
+$fonts-root: $assets-root + 'fonts/';
+$font-thin: 100;
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 700;
+$font-bolder: 500;
+$font-ultraBold: 900;
+
+$top-height: 90px;
+
+$font-10: 10px;
+$font-12: 12px;
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+$font-26: 26px;
+$font-28: 28px;
+$font-30: 30px;
+$font-32: 32px;
+$font-34: 34px;
+$font-36: 36px;
+$font-64: 64px;
+
+/*$font-10: get-vw(10px);
+$font-12: get-vw(12px);
+$font-14: get-vw(14px);
+$font-16: get-vw(16px);
+$font-18: get-vw(18px);
+$font-20: get-vw(20px);
+$font-22: get-vw(22px);
+$font-24: get-vw(24px);
+$font-26: get-vw(26px);
+$font-28: get-vw(28px);
+$font-30: get-vw(30px);
+$font-32: get-vw(32px);
+$font-34: get-vw(34px);
+$font-36: get-vw(36px);
+$font-64: get-vw(64px);*/

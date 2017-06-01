@@ -1,0 +1,30 @@
+/// Slightly lighten a color
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+@mixin bg-translucent-dark($opacity) {
+  background: rgba(0, 0, 0, $opacity);
+}
+
+@function get-vw($object) {
+    $vw: (1920 * 0.01) * 1px;
+    @return ($object / $vw) * 1vw;
+}
+
+@function get-vh($object) {
+    $vh: (1080 * 0.01) * 1px;
+    @return ($object / $vh) * 1vh;
+}
+

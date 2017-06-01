@@ -1,0 +1,29 @@
+@import 'mixins';
+@import 'colors/_default';
+@import 'variables';
+
+.btn-primary {
+    background-color: $summer-sky;
+    border-color: $summer-sky;
+    font-family: $font-proxima;
+    border-radius: 0;
+    width:get-vw(200px);
+    height: get-vh(50px);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active    {
+    background-color: $summer-sky;
+    color: #FFF;
+    border-color: $summer-sky;
+    border-radius: 0;
+}
+
+.has-danger .form-control {
+    border-color:  $venetian-red;
+}
+
+.form-control {
+    border-radius: 0;
+    border-color: $nobel1;
+}

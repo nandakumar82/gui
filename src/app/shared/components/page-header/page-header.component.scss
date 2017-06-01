@@ -1,0 +1,78 @@
+@import '../../../shared/sass/conf/conf';
+
+header {
+  height: get-vh(90px);
+  min-height: 70px;
+  background-color: $gainsboro;
+  color: $lynch;
+  padding: 0 !important;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
+}
+
+.header-row {
+  height: 100%;
+}
+
+.header-logo-background {
+  background-color: $charcoal;
+  height: 100%;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+}
+
+.header-logo {
+  color: $nobel;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: $font-14;
+  padding-left: get-vw(50px);
+  width: 100%;
+}
+
+.header-logo span {
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.content {
+  margin-top: get-vh(50px);
+  padding: 0px;
+}
+
+.header-right i {
+  font-size: get-vw(22px);
+  margin-right: get-vw(60px);
+}
+
+.header-right a, .header-right a:hover, .header-right a:visited,
+.navigation a, .navigation a:hover, .navigation a:visited
+ {
+  color: $lynch;
+  text-decoration: none;
+}
+
+.navigation {
+  font-size: get-vw(18px);
+  //font-weight: bold;
+  height: 100%;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.navigation ul li {
+  display: inline-flex;
+  margin-left: 30px;
+  height: 100%;
+  align-items:center;
+  padding: 0 10px;
+}
+.navigation ul li.active {
+  border-bottom: 3px solid $pacific-blue;
+}
+.navigation a:hover, .navigation ul li.active a {
+  color: $pacific-blue;
+}
